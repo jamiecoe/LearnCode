@@ -1,5 +1,6 @@
 import React from "react";
 
+// You want to keep these alphabetical
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -7,6 +8,7 @@ import Header from "./Header";
 // Like in HTML, everything is a <tag> element
 
 export default class Layout extends React.Component {
+  // Must call super() as first line of react component constructor
   constructor() {
     super();
     this.state = {

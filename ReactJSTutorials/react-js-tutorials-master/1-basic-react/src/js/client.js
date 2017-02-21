@@ -5,4 +5,6 @@ import ReactDOM from "react-dom";
 import Layout from "./components/Layout";
 
 const app = document.getElementById('app');
+// To render a component (eg: Layout), you use it as if it is an HTML tag
+// Also supply app, which is <div> where we put our React components inside
 ReactDOM.render(<Layout/>, app);
