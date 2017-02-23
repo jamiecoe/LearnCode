@@ -45,7 +45,7 @@ export default class Layout extends React.Component {
     // This is how you pass values to other React components
     // this.state.title value will be available to Header as this.props.title
     // Can also pass in function like changeTitle, BUT very important you use this.changeTitle.bind(this)
-    // If you don't bind the function to 'this' (ie: Layout Component), then it will try to change the 'state' in the component it was called in
+    // If you don't bind the function to 'this' (ie: Layout Component), then it will try to change the 'state' in the component it was called in (it will try to execute in the context of whoever is called it)
     // We don't use state in Header so this would do nothing!
     // We want change in input field (inside Header) to update the state in Layout, so that's why we use bind(this) on the props method
     return (

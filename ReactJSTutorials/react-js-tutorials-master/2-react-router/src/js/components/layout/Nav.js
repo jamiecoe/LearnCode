@@ -1,4 +1,5 @@
 import React from "react";
+// Link is used instead of <a href"">
 import { IndexLink, Link } from "react-router";
 
 export default class Nav extends React.Component {
@@ -39,6 +40,8 @@ export default class Nav extends React.Component {
                 <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Featured</IndexLink>
               </li>
               <li activeClassName="active">
+                {/* - <Link to="archives"> will take you to archives Route
+                */}
                 <Link to="archives" onClick={this.toggleCollapse.bind(this)}>Archives</Link>
               </li>
               <li activeClassName="active">
