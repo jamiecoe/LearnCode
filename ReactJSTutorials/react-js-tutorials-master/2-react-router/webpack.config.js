@@ -14,6 +14,8 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-0'],
+          // 'react-html-attrs' plugin allows you to use HTML attribute names like 'class=', even though class in a reserved word in Javascript now
+          // It will automatically transpile 'class=' to 'className=' which is then ok in React
           plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
         }
       }
