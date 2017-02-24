@@ -24,6 +24,9 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={Featured}></IndexRoute>
+      {/* - archives(/:article) means you're adding a Param to url
+          - putting () around /:article means its optional, you don't have to add specific article to url 
+      */}
       <Route path="archives(/:article)" name="archives" component={Archives}></Route>
       <Route path="settings" name="settings" component={Settings}></Route>
     </Route>
