@@ -11,6 +11,7 @@ var events = {
   // 'on' is when an event listener is turned on, you pass in an event name and a callback funciton
   on: function (eventName, fn) {
     // if events[eventName] doesn't exist yet, make it an empty array
+    // Because arrays are objects, this.events[eventName] is the same as this.events.eventName
     this.events[eventName] = this.events[eventName] || [];
     // add the callback function to the array
     this.events[eventName].push(fn);
